@@ -11,12 +11,4 @@ Just do "make" or "make all"
 
 
 Additional Things:
-Hey Professor, I was struggled with a couple test cases that I didn't pass. 
-I ran them individually, use od -tx1 compared to the expected output. However, most
-of the time, it did not give me any clue where could possibly go wrong inside my
-code. And I was just blindly take a guess to see if this and that modification
-would fix anything or not. So my general quetsion is like is there a systamatic 
-approach for us to debug with inputs like "longcodes" or like "binary", they are
-like too long for me to examine each character. So I would be glad if you can give me
-some feedback on what could cause it to fail and like what's the general approach
-we should take to debug?  
+
