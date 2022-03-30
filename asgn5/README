@@ -13,16 +13,3 @@ run your demos program.
 
 
 Additional comment: 
-I agree with you this is indeed a 
-pretty interesting program to write. 
-And it is pretty cool to be able
-to chat. One thing to mention though, I did separate
-functions for chatserver() and chatclient() 
-even though they're technically the same, I
-didn't realize they're the same until I 
-finished the program. And I felt like it was ok
-to not merge them, and just leave it as it is (and 
-it would also probably be better if we wanna do
-individual changes to either of them later as well). 
-So I hope I don't get points marked off for using 
-repetitive codes in a sense. 
