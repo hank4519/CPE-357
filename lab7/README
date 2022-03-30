@@ -10,6 +10,4 @@ be able to run ./forkit and ./tryit separately
 
 
 Additional comment: 
-This fork() parent child processes is kind of interesting, 
-but not sure if it has practical uses. Also the exec program also
-seems pretty interesting, replaces the current program... 
+
