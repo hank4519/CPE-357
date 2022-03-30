@@ -1,0 +1,20 @@
+
+CPE 357 
+Lab 6
+
+Name: Hank Tsai 
+Login name: htsai04
+
+Running the program: 
+
+do a make, and after that, we probably have to run that manually, do something like
+
+./timeit 5 (or any other integer number)
+
+
+Additional comment: 
+This timer thing is pretty interesting. Though, those signal operations are not
+all that easy to understand exactly what they do. I thoroughly read through the 
+man page for the signal handling functions we used in this lab, I kind of get 
+the ideas, but not like super clear. But all good, I will just watch lecture 
+recordings if I have further confusions.  

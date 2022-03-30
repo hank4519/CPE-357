@@ -1,0 +1,58 @@
+CPE 357
+Asgn6: mush2.c 
+
+Name: Hank Tsai 
+Cal Poly Login name: htsai04
+
+
+Instruction:
+Nothing special. Just do a 'make' and
+it will be good to go.
+
+
+Additional things:
+ 
+Hey Professor, thanks for all the help you
+gave this quarter. I really appreciate it, 
+almost no professor replying emails over the 
+weekends like you do. Thanks for that. And I 
+learned a ton of stuff tbh, especailly it is 
+my first time working in a unix environment
+and writing codes in the terminal. 
+
+As of this project, I totally agree with you 
+that it was not as difficult as it seems at the
+beginning. Because like you said the parsing
+part was the difficult stuff and you took care 
+of it. Though, I was a bit confused on the piping
+stuff at first, and took me several tries and 
+re-learning to get that part done. But other 
+than that, I guess exec family really just does
+everything for us. My failed attempts for pipe
+function() was commented out at the end of the 
+c file, I did not delete it, but you can just 
+ignore that part.
+
+As of the final, the difficulty was intermediate
+I would say. One regret was that right after the
+final, I realized for the piping problem I forgot 
+to close the file descriptors for the parent's copy 
+which was a mistake. As you particularly emphasized it
+in the lab, it would hang the commands forever. I 
+guess I was just too excited getting to the wait
+part of question in the final. Anyways, I would 
+remember this better now. 
+
+As of the class picture, I noticed that on your 
+website, our class picture was not up.  Are you 
+like updating the class picture once a year for 
+three quarters all together or something? Let me
+know when the class picture is up, because I would
+love to keep a copy of it and also show it to
+my family. They'd love to see it too. 
+
+Anyways, thank you for this quarter. 
+
+Sincerely,
+Hank
+

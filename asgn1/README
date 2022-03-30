@@ -1,0 +1,8 @@
+My name: Hank Tsai, my login name is (htsai04) Section: 07  
+
+There is no specific instruction for running the program. 
+
+This program seems like a simple one which replaces tab with spaces. However,
+since it contains so many edge cases, so it turned out to be harder than I 
+thought. When I first thought it worked, it only passed two test cases. But by
+doing this, it definitely made me to think more comprehensive when writing a program. 

@@ -1,0 +1,27 @@
+My Name: Hank Tsai 
+
+Cal Poly Login Name: (htsai04)
+
+ 
+
+Instruction for running my program: 
+
+use 'make' to make the "all" executable
+
+use 'make test' to run the given testcases
+
+
+Additional things: 
+
+the purpose of this program seems straightforward, but it was way harder
+than I thought because how many cases we need to cover. And had to fix a
+bunch of segmentation fault, but after like four days of looking into it. 
+I'm glad I finally made it work for all test cases even though they are
+not exhaustive. Overall, let me know what you think of my program. Thanks for 
+all your help and all the email you responded. A quick note though, I don't get it
+ like it how CS department of our school is not giving CPE 357 a TA or tutor duing the lab
+ hour, it was like I raised my hand for like 50 minitus and can only get helped once,
+ comparing to the 203 I had last quarter, where both professor and TA were pretty much 
+free the entire lab period. That is something I don't get it, and hopefully 
+if you see my complaint, you can possibly talk to someone in the CS department
+about it, and see what they say. 

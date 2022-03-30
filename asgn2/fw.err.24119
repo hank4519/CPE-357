@@ -1,0 +1,3 @@
+Parent process (24500) caught signal (Interrupt).
+Forwarding signal (Interrupt) to child.
+Child process (24506) exited due to signal (Interrupt).

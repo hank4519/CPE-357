@@ -1,0 +1,74 @@
+
+
+Name: Hank Tsai, Login name: htsai04
+
+
+Special instruction for running the program: 
+I created a test file called "Testfile" with capitalized T that could be used for testing.
+Makefile instruction: 
+make
+make all 
+make uniq
+make test
+make clean
+./all uniq.c Testfile  
+ 
+
+Additional things:
+I wrote my program that it supports both stdin and input file. But if there is an input file given after the 
+executable like ./a.out uniq.c Testfile, it will use the input file first. Also I put the test case you provided
+in Makefile "test" target. So if you do make test, it will run the test cases. 
+  
+
+My answers to the written problems:
+
+1. declaration
+(a) char *cp; 
+    // Allocation is like:  cp = (char *)malloc(sizeof(char));
+(b) char *ap;
+    // or we can do char[]; 
+    // Allocation is like for size 10:  ap = (char *)malloc(10 * sizeof(char)); 
+(c) int **pp; 
+
+2. Yes, it is possible in C to declare and initialize a pointer that points to 
+itself. The pointer is essentially a 64 bit number that contains data, and the 
+data could just be the address of itself. 
+
+3. When the sample program gets executed, it will have warnings saying it is 
+not a good practice to compare between pointers and zero character constant. 
+Instead, to fix this program, we have to dereference it before comparing in the for loop. 
+for(p=s; *p !='\0'; p++) 
+
+4. "arrays are the same as pointers" 
+(a) The statement is correct in the sense of indexing and arthmetic. Both arrays and pointers take index to access elements. 
+(b) It is an error because array and pointers are fundamentally different to the compilers. Array refers to an block of memory, like if you have an array of 
+size 5, we can imagine we have five continuous blocks each is like 4 bytes away from each other. On the other hand, a pointer essentially just contains an 
+address of another variable, it is a single variable (the first element of an
+array) rather than a continuous block of memory. 
+
+5. The argument to perror is defined with ISO C attribute const, whereas the 
+integer argument to strerror isn't defined with this attribute, why? 
+
+The parameter passed into perror function is a pointer namely *msg,it needs to
+be declared as const here so that if the pointer is modified inside the function, it won't affect the value outside the function. The integer argument in 
+strerror is called errnum which is an integer, not a pointer, modifying it 
+in the function won't affect the value outside of it. Therefore, it does not 
+have to be declared as const.
+
+6. If the calendar time is stored as a signed 32 bit integer, in which year will it overflow? How can we extend the overflow point? Are these strategies 
+conpatible with existing applications? 
+
+To calculate the time: 
+we have a signed 32 bit integer, 2 ^ 31 
+Linux unix was born in like 1970 
+so 2^31/(365*24*60*60)+1970 = 2038, in 2038, it will overflow.
+To extend the overflow point, we can use a bigger integer like the 64 bit one. 
+It might not be compatible with exsiting applications, I believe those computer
+scientists can integrate it if they have to. 
+
+
+7. What is the actual data type of a size_t? In what header file is it defined?
+ 
+The actual data type of size_t is an unsigned integer, which means it cannot be a negative number. And it is defined in manny header files: <stdio.h> <stdlib.h>
+<string.h> <time.h> and so on. 
+

@@ -1,0 +1,2 @@
+ls | grep o | sort | wc > phone1 
+ls Makefile mush2 > phone2 

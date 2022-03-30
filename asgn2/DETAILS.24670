@@ -1,0 +1,78 @@
+=====================
+00_usage diffs (< Reference >Submitted)
+=====================
+  1c1
+  < Usage message found.
+  ---
+  > No usage message.
+=====================
+01_usage_notanumber diffs (< Reference >Submitted)
+=====================
+  1c1
+  < Usage message found.
+  ---
+  > No usage message.
+=====================
+02_emptyfile diffs (< Reference >Submitted)
+=====================
+  1d0
+  < The top 10 words (out of 0) are:
+---------------------
+Submitted's stderr
+---------------------
+  Child process (24760) exited due to signal (Segmentation fault).
+=====================
+03_tendistinctwords diffs (< Reference >Submitted)
+=====================
+  1,11c1,3
+  < The top 10 words (out of 10) are:
+  <        10 ten
+  <         9 nine
+  <         8 seven
+  <         8 eight
+  <         6 six
+  <         5 five
+  <         4 four
+  <         3 three
+  <         2 two
+  <         1 one
+  ---
+  > The top 10  words (out of 56) are: 
+  >    10  ten
+  >    10  
+---------------------
+Submitted's stderr
+---------------------
+  Child process (24789) exited due to signal (Aborted).
+=====================
+04_emptystdin diffs (< Reference >Submitted)
+=====================
+  1d0
+  < The top 10 words (out of 0) are:
+---------------------
+Submitted's stderr
+---------------------
+  Child process (24812) exited due to signal (Segmentation fault).
+=====================
+05_stdin diffs (< Reference >Submitted)
+=====================
+  1,11c1,3
+  < The top 10 words (out of 3018) are:
+  <      2064 the
+  <      1128 a
+  <      1029 e
+  <       936 s
+  <       840 to
+  <       744 c
+  <       673 is
+  <       668 t
+  <       630 and
+  <       624 n
+  ---
+  > The top 10  words (out of 24681) are: 
+  >    2053  the
+  >    2053  ^Hpt^Ht.
+---------------------
+Submitted's stderr
+---------------------
+  Child process (24834) exited due to signal (Aborted).

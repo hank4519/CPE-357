@@ -1,0 +1,94 @@
+Name: Hank Tsai 
+Cal Poly Login ID: htsai04
+
+C Quiz Correction:
+
+
+
+1. char letters[6] = {'a', 'b', 'c', '\0', 'd', 'e'}; 
+
+Evaluate strlen(letters);
+
+Ans: strlen(letters) = 3, because strlen sees '\0' as a null terminator, and will only count chars up to that point. 
+
+Other than that, received full credit for other expressions. 
+
+
+
+
+2. #define one(x,y) (x + y)
+   #define two(a) (x * x)
+   int x = 3; 
+   int y = 4; 
+
+Evaluate the following expression: 
+
+two(two(2)) 
+
+Value: 9 
+Explanation: This will use macro expression of two(a) (x*x) where the evaluation itself 
+		is independent of the variable a, instead it will just give us 3 * 3 = 9 
+		and the second call two(9), and again 9 does not matter at all, it will 
+		do 3 * 3 again, and eventually returns another 9.
+
+two(one(++x, 0)) 
+	
+Value: 9
+Explanation: First of all, it will evaluate one(++x, 0), and it will give us 4 (4 + 0), and
+		we will do two(4), and again, macro expression of two is independent of the 
+		variable passed in, we we will just get 3 * 3, which is 9. 
+
+Other than that, received full credit for other expressions. 
+
+
+3. Received full credit. 
+
+
+4. Received full credit. 
+
+
+5. Write a C function, copy_append_string() that takes a two strings, s and t, possibly NULL, 
+	as its parameters and returns a pointer to a newly allocated region of memory containing
+	a string that is the concatenation of the two. (That is, copy_append_string("Hi ", "There")
+	would return a pointer to "Hi There").
+	Write robust code, that is, return NULL on failure, but do not crash. Do not use any of the
+	C library's string functions. 
+
+	/*get the length of a string*/ 
+	int strlens(char *s){
+		int len; 
+		for(len = 0; s[len]; len++)
+			; 
+		return len; 
+	}
+
+	char *copy_append_string (char *s, char *t){
+		char *new, *head; 
+		if(!s && !t){ //if both strings are NULL 
+			return NULL; 
+		}
+		if(!s){   //if one of them is NULL 
+			s = ""; 
+		}
+		if(!t){
+			t = "";
+		}
+		head = new =  malloc (strlens(s) + strlens(t) + 1); 
+		if(!head){ //if malloc failed
+			return NULL; 
+		}
+		/*concatenating new strings*/
+		while(*s){
+			*new++ = *s++; 
+		}	
+		while(*t){
+			*new++ = *t++; 
+		}
+		*new = '\0'; //terminating string
+		return head; 
+	} 
+
+
+
+6. Received full credit. 
+
